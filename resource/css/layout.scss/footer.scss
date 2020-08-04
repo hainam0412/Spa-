@@ -1,0 +1,17 @@
+.footer__block {
+  @include screen("mobile") {
+    text-align: center;
+  }
+
+  &-label {
+    font-size: 1.1rem;
+  }
+
+  &-list {
+    &-link {
+      font-size: 1.1rem;
+      color: $text-color;
+      padding: 0.7rem 0;
+    }
+  }
+}

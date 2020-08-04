@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #dddbdbd2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(210, 210, 210, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.transform { 
+  &:hover {
+    color: #fff;
+  }
+}
+
+.hide-tablet {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.hide-mobile {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.check-show {
+}
+
+.grey-link {
+  &:hover {
+    color: #575757;
+  }
+}
+
+.primary-link {
+  &:hover {
+    color: $sub-color;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.relative-block {
+  position: relative;
+}
+
+.primary-background {
+  background-color: $primary-color;
+}
+
+.pink-background {
+  background-color: #e53878;
+}
+
+.purple-background {
+  background-color: #6c407e;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

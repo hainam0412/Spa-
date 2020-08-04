@@ -1,0 +1,15 @@
+.border-list {
+  &__row {
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    padding: 0.8rem 0;
+    text-transform: uppercase;
+    line-height: 2.3rem;
+  }
+
+  & &__row:last-child {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
+  }
+}

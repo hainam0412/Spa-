@@ -1,0 +1,206 @@
+.spa-beauty-center {
+  background-image: url("../lib/spa-img5.jpg");
+}
+
+.spa__counter {
+  &-icon {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: $light-grey-color;
+  }
+
+  &-number {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: $label-color;
+    margin-bottom: 1.8rem;
+  }
+
+  &-label {
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.spa-hair-salon {
+  background-image: url("../lib/spa-img7.jpg");
+}
+
+.spa__gift {
+  padding: 3rem 2.5rem;
+  border: 2px dotted $grey-color;
+
+  &-time {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  &-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $label-color;
+    margin-bottom: 1.5rem;
+  }
+
+  &-label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: #ff1a56;
+    line-height: 2.7rem;
+  }
+}
+
+.spa-center {
+  background-image: url("../lib/spa-img9.jpg");
+}
+
+.spa__treatment {
+  & &-item:first-child {
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
+  }
+
+  &-item {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-left: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.15);
+
+    &-label {
+      font-size: 1.4rem;
+      padding: 2.5rem;
+      font-weight: 400;
+      color: $light-grey-color;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+    }
+
+    &-img {
+      padding-right: 4rem;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &-block {
+      padding-left: 2.5rem;
+      padding-bottom: 2.5rem;
+      display: none;
+    }
+  }
+}
+
+.spa-user-commend {
+  background: linear-gradient($black-gradient), url("../lib/spa-img14.jpg");
+  @include background;
+  background-attachment: fixed;
+  .carousel-cell {
+    width: 100%; /* full width */
+    cursor: w-resize;
+  }
+
+  .flickity-button {
+    display: none;
+  }
+
+  .flickity-page-dots .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    opacity: 1;
+    background: #ccc;
+    border: 0.2rem solid #fff;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background: transparent;
+  }
+
+  &-item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 3rem;
+
+    @include screen("mobile") {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      width: 100%;
+    }
+  }
+
+  &-img {
+    width: 13rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.spa-blog {
+  &__img {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      transition: all 0.5s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      @include absolute(top 0 left 0);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &-date {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #797979;
+    }
+  }
+}
+
+.spa-address {
+  padding-top: 6.5rem;
+  padding-bottom: 4rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
+
+  &__icon {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}

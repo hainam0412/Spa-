@@ -1,0 +1,60 @@
+.btn-to-top {
+  color: #fff;
+  background-color: $grey-color;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  transition: all 0.6s;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: translateY(5rem);
+
+  &:hover {
+    background-color: $label-color;
+  }
+}
+
+.btn-to-top-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  text-transform: uppercase;
+  border: 2px solid;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+  padding: 0 1.4rem;
+  font-size: 1.1rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+}
+
+.btn-dark {
+  color: $label-color;
+  border-color: $label-color;
+
+  &:hover {
+    color: #fff;
+    background-color: $label-color;
+  }
+}
+
+.btn-black-bg {
+  background-color: $label-color;
+  color: #fff;
+  font-size: 0.9rem;
+
+  &:hover {
+    background-color: transparent;
+    color: $label-color;
+  }
+}
